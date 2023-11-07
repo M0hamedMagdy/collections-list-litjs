@@ -1,12 +1,24 @@
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import "./lable.ts";
 
 @customElement("lables-grid")
 export class LabelsGrid extends LitElement {
-  @property({ type: String })
-  title = "Add your title";
+  @property({ type: Array })
+  labels: Array<String> = [
+    "Profile",
+    "New York",
+    "Relaxing",
+    "Person",
+    "Fashion",
+  ];
+
   render() {
-    return html` <span>${this.title}</span> `;
+    return html`
+      ${this.labels.map(
+        (lable: any) => html`<one-lable text="${lable}"></one-lable>`
+      )}
+    `;
   }
 
   static styles = css`
