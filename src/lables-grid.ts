@@ -23,13 +23,16 @@ export class LabelsGrid extends LitElement {
 
   static styles = css`
     :host {
+      /* Layout */
       display: flex;
       padding: 25px;
       align-items: center;
-      justify-content: center;
+      justify-content: left;
       flex-direction: row;
-      border-radius: 5px;
       gap: 10px;
+
+      /* Style */
+      border-radius: 5px;
     }
 
     span {
