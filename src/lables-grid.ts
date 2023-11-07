@@ -1,15 +1,12 @@
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("my-lable")
-export class MyLable extends LitElement {
+@customElement("lables-grid")
+export class LabelsGrid extends LitElement {
   @property({ type: String })
   title = "Add your title";
   render() {
-    return html`
-      <span>${this.title}</span>
-      <span>New York</span>
-    `;
+    return html` <span>${this.title}</span> `;
   }
 
   static styles = css`
@@ -32,6 +29,6 @@ export class MyLable extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-lable": MyLable;
+    "lables-grid": LabelsGrid;
   }
 }
