@@ -24,6 +24,10 @@ main {
   padding: 62px;
 }
 
+lables-grid {
+  margin-top: 24px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
