@@ -3,38 +3,29 @@ import { customElement, property } from "lit/decorators.js";
 
 @customElement("one-collection")
 export class Collection extends LitElement {
+  @property({ type: String }) title = "";
+  @property({ type: String }) count = "";
+  @property({ type: String }) mainPhotoSrc = "";
+  @property({ type: String }) photo1Src = "";
+  @property({ type: String }) photo2Src = "";
+  @property({ type: String }) photo3Src = "";
+
   render() {
     return html`
       <div class="container">
         <div class="photos_group">
           <picture>
-            <img
-              src="src/assets/img/people_1.png"
-              alt="Main Photo"
-              class="main_photo"
-            />
+            <img src=${this.mainPhotoSrc} alt="Main Photo" class="main_photo" />
           </picture>
           <div class="photos-grid">
-            <img
-              src="src/assets/img/people_2.png"
-              alt="Photo 1"
-              class="photo"
-            />
-            <img
-              src="src/assets/img/people_3.png"
-              alt="Photo 2"
-              class="photo"
-            />
-            <img
-              src="src/assets/img/people_4.png"
-              alt="Photo 3"
-              class="photo"
-            />
+            <img src=${this.photo1Src} alt="Photo 1" class="photo" />
+            <img src=${this.photo2Src} alt="Photo 2" class="photo" />
+            <img src=${this.photo3Src} alt="Photo 3" class="photo" />
           </div>
         </div>
 
         <div class="description">
-          <span class="title">People</span>
+          <span class="title">${this.title}</span>
           <div class="svg_count">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +75,7 @@ export class Collection extends LitElement {
                 </clipPath>
               </defs>
             </svg>
-            <span class="count">144</span>
+            <span class="count">${this.count}</span>
           </div>
         </div>
       </div>
