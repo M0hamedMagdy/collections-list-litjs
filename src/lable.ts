@@ -14,22 +14,29 @@ export class Lable extends LitElement {
     :host {
       /* Layout */
       display: flex;
-      padding: 10px;
+      padding: 0.625rem; /* 10px */
       align-items: flex-start;
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
 
       /* Style */
-      border-radius: 8px;
+      border-radius: 0.5rem; /* 8px */
       background: #fff;
 
       /* Typography */
-
       color: #0e0e38;
       font-family: "Poppins", sans-serif;
-      font-size: 16px;
+      font-size: 1rem; /* 16px */
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 37.5rem) {
+      /* 600px */
+      :host {
+        font-size: 0.875rem; /* 14px */
+      }
     }
   `;
 }
