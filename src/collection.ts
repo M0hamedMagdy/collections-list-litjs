@@ -3,12 +3,18 @@ import { customElement, property } from "lit/decorators.js";
 
 @customElement("one-collection")
 export class Collection extends LitElement {
-  @property({ type: String }) title = "";
-  @property({ type: String }) count = "";
-  @property({ type: String }) mainPhotoSrc = "";
-  @property({ type: String }) photo1Src = "";
-  @property({ type: String }) photo2Src = "";
-  @property({ type: String }) photo3Src = "";
+  @property({ type: String })
+  title = "";
+  @property({ type: String })
+  count = "";
+  @property({ type: String })
+  mainPhotoSrc = "";
+  @property({ type: String })
+  photo1Src = "";
+  @property({ type: String })
+  photo2Src = "";
+  @property({ type: String })
+  photo3Src = "";
 
   render() {
     return html`
@@ -23,7 +29,6 @@ export class Collection extends LitElement {
             <img src=${this.photo3Src} alt="Photo 3" class="photo" />
           </div>
         </div>
-
         <div class="description">
           <span class="title">${this.title}</span>
           <div class="svg_count">
@@ -85,54 +90,54 @@ export class Collection extends LitElement {
   static styles = css`
     div.container {
       /* Layout */
-      width: 389px;
-      height: 441px;
+      width: 24.3125rem; /* 389px */
+      height: 27.5625rem; /* 441px */
       display: flex;
-      padding: 24px;
+      padding: 1.5rem; /* 24px */
       flex-direction: column;
       align-items: flex-start;
-      gap: 24px;
+      gap: 1.5rem; /* 24px */
 
       /* style */
-      border-radius: 32px;
+      border-radius: 2rem; /* 32px */
       background: #fff;
     }
 
     div.photos_group {
       /* Layout */
-      width: 389px;
-      height: 381px;
+      width: 24.3125rem; /* 389px */
+      height: 23.8125rem; /* 381px */
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 16px;
+      gap: 1rem; /* 16px */
     }
 
     img.main_photo {
       /* Layout */
-      width: 389px;
-      height: 268px;
+      width: 24.3125rem; /* 389px */
+      height: 16.75rem; /* 268px */
 
       /* Style */
-      border-radius: 24px;
+      border-radius: 1.5rem; /* 24px */
       object-fit: cover;
     }
 
     div.photos-grid {
       /* Layout */
       display: flex;
-      gap: 16px;
+      gap: 1rem; /* 16px */
     }
 
     img.photo {
       /* Layout */
-      width: 119px;
-      height: 97px;
+      width: 7.4375rem; /* 119px */
+      height: 6.0625rem; /* 97px */
       object-fit: cover;
       object-position: top;
 
       /* Style */
-      border-radius: 24px;
+      border-radius: 1.5rem; /* 24px */
     }
 
     div.description {
@@ -151,27 +156,58 @@ export class Collection extends LitElement {
       /* Typography */
       color: #0e0e38;
       font-family: Poppins;
-      font-size: 24px;
+      font-size: 1.5rem; /* 24px */
       font-style: normal;
       font-weight: 500;
       line-height: normal;
     }
+
     div.svg_count {
       /* Layout */
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: 8px;
+      gap: 0.5rem; /* 8px */
     }
 
     span.count {
       color: #0e0e38;
       font-family: Poppins;
-      font-size: 16px;
+      font-size: 1rem; /* 16px */
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 37.5rem) {
+      /* 600px */
+      div.container {
+        width: 100%;
+        height: auto;
+      }
+
+      div.photos_group {
+        width: 100%;
+        height: auto;
+      }
+
+      img.main_photo {
+        width: 100%;
+        height: auto;
+      }
+
+      div.photos-grid {
+        width: 100%;
+      }
+
+      img.photo {
+        width: calc(
+          (100% - 2rem) / 3
+        ); /* subtract the total gap space and divide by 3 */
+        height: auto;
+      }
     }
   `;
 }
