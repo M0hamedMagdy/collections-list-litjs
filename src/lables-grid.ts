@@ -25,19 +25,32 @@ export class LabelsGrid extends LitElement {
     :host {
       /* Layout */
       display: flex;
-      padding: 25px;
+      padding: 1.5625rem; /* 25px */
       align-items: center;
       justify-content: left;
       flex-direction: row;
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
+      width: 100%;
 
       /* Style */
-      border-radius: 5px;
+      border-radius: 0.3125rem; /* 5px */
     }
 
     span {
-      font-size: 20px;
+      font-size: 1.25rem; /* 20px */
       color: #000;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 37.5rem) {
+      /* 600px */
+      :host {
+        justify-content: center;
+      }
+
+      span {
+        font-size: 1rem; /* 16px */
+      }
     }
   `;
 }
