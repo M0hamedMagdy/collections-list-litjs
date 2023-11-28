@@ -56,7 +56,16 @@ export class CollectionsGrid extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 64px;
+      gap: 4rem; /* 64px */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 37.5rem) {
+      /* 600px */
+      :host {
+        flex-direction: column;
+        gap: 1.5rem; /* 24px */
+      }
     }
   `;
 }
