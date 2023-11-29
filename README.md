@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/user/7ac971d8-79f6-42a0-b0d6-07396e708839/project/018bab73-2c22-44da-8a96-3b12c584ffa4.svg)](https://wakatime.com/badge/user/7ac971d8-79f6-42a0-b0d6-07396e708839/project/018bab73-2c22-44da-8a96-3b12c584ffa4)
+
 # Collections List Project
 
 This project is a web application that displays a list of collections. It's built with Lit, a simple library for building fast, lightweight web components.
