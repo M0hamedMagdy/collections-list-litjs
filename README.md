@@ -33,7 +33,7 @@ This project is a web application that displays a list of collections. It's buil
 
 ## Mobile - Sumsung Galaxy S20 Ultra
 
-![Mobile](./screenshots/mobile.png)
+![Mobile](<./screenshots/mobile_(Samsung%20Galaxy%20S20%20Ultra).png>)
 
 ## Contact
 
