@@ -57,6 +57,7 @@ export class CollectionsGrid extends LitElement {
       align-items: center;
       justify-content: center;
       gap: 4rem; /* 64px */
+      flex-wrap: wrap;
     }
 
     /* Responsive Design */

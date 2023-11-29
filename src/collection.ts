@@ -90,8 +90,6 @@ export class Collection extends LitElement {
   static styles = css`
     div.container {
       /* Layout */
-      width: 24.3125rem; /* 389px */
-      height: 27.5625rem; /* 441px */
       display: flex;
       padding: 1.5rem; /* 24px */
       flex-direction: column;
@@ -183,10 +181,6 @@ export class Collection extends LitElement {
     /* Responsive Design */
     @media (max-width: 37.5rem) {
       /* 600px */
-      div.container {
-        width: 100%;
-        height: auto;
-      }
 
       div.photos_group {
         width: 100%;

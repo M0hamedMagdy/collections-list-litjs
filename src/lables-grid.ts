@@ -31,6 +31,7 @@ export class LabelsGrid extends LitElement {
       flex-direction: row;
       gap: 0.625rem; /* 10px */
       width: 100%;
+      padding: 0.625rem; /* 10px */
 
       /* Style */
       border-radius: 0.3125rem; /* 5px */

@@ -29,14 +29,9 @@ export class Lable extends LitElement {
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-    }
 
-    /* Responsive Design */
-    @media (max-width: 37.5rem) {
-      /* 600px */
-      :host {
-        font-size: 0.875rem; /* 14px */
-      }
+      /* Prevent line breaks */
+      white-space: nowrap;
     }
   `;
 }
