@@ -13,7 +13,7 @@ This project is a web application that displays a list of collections. It's buil
 ### Prerequisites
 
 - Node.js
-- npm
+- pnpm
 
 ### Installation
 
