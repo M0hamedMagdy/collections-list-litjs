@@ -18,11 +18,11 @@ This project is a web application that displays a list of collections. It's buil
 ### Installation
 
 1. Clone the repo: `https://github.com/M0hamedMagdy/collections-list-litjs`
-2. Install NPM packages: `npm install`
+2. Install NPM packages: `pnpm install`
 
 ### Usage
 
-1. Start the development server: `npm run dev`
+1. Start the development server: `pnpm run dev`
 2. Open your browser and visit `http://localhost:5173/`
 
 ### Screenshots
