@@ -39,7 +39,7 @@ This project is a web application that displays a list of collections. It's buil
 
 ## Contact
 
-- Mohamed Mgady - mohamedmagdy12@outlook.com
+- Mohamed Magdy - mohamedmagdy12@outlook.com
 - [Twitter](https://twitter.com/imohameds2)
 - [GitHub](https://github.com/M0hamedMagdy/)
 
